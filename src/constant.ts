@@ -26,7 +26,7 @@ export const APP_BUILD_INFO = process.env
 
 export const NODE_ENV = process.env.NODE_ENV;
 
-export const COTURN_URL = `turn:hk.${prodDomain}`;
+export const COTURN_URL = `turn:hk`;
 
 // ======本地调试=====
 
@@ -47,17 +47,17 @@ export const COTURN_URL = `turn:hk.${prodDomain}`;
 export const WEBSOCKET_URL =
   process.env.NODE_ENV === 'development'
     ? `ws://localhost:4300`
-    : `wss://srs-pull.${prodDomain}`;
+    : ``;
 
 export const AXIOS_BASEURL =
   process.env.NODE_ENV === 'development'
     ? `/api`
-    : `https://api-live.${prodDomain}`;
+    : ``;
 
 // ======线上正式=====
 
 export const COOKIE_DOMAIN =
-  process.env.NODE_ENV === 'development' ? undefined : `.${prodDomain}`;
+  process.env.NODE_ENV === 'development' ? undefined : ``;
 
 export const THEME_COLOR = '#ffd700';
 
