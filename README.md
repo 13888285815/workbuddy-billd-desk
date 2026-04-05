@@ -1,10 +1,10 @@
 BilldDesk Pro | [BilldDesk 开源版](./README_OpenSource.md)
 
 <p align="center">
-  <a href="https://desk.hsslive.cn" target="_blank">
+  <a href="" target="_blank">
     <img
       width="200"
-      src="https://github.com/galaxy-s10/billd-desk/blob/main/readme_img/icon.png"
+      src="https://github.com/13888285815/workbuddy-billd-desk/blob/main/readme_img/icon.png"
     />
   </a>
 </p>
@@ -140,61 +140,61 @@ Api：
 
 ## 客户端下载
 
-[https://desk.hsslive.cn/#/download](https://desk.hsslive.cn/#/download)
+[/#/download](/#/download)
 
 ## 预览
 
-快速体验：[https://desk.hsslive.cn](https://desk.hsslive.cn)
+快速体验：[]()
 
 ### web网页/电脑端控制电脑端
 
-![img](https://github.com/galaxy-s10/billd-desk/blob/main/readme_img/111.png?raw=true)
+![img](https://github.com/13888285815/workbuddy-billd-desk/blob/main/readme_img/111.png?raw=true)
 
 ### web网页/电脑端控制安卓端
 
-![img](https://github.com/galaxy-s10/billd-desk/blob/main/readme_img/222.png?raw=true)
+![img](https://github.com/13888285815/workbuddy-billd-desk/blob/main/readme_img/222.png?raw=true)
 
 ### web网页/电脑端控制web网页
 
 > 仅观看模式
 
-![img](https://github.com/galaxy-s10/billd-desk/blob/main/readme_img/333.png?raw=true)
+![img](https://github.com/13888285815/workbuddy-billd-desk/blob/main/readme_img/333.png?raw=true)
 
 ### web网页移动端
 
 > 首页
 
-![img](https://github.com/galaxy-s10/billd-desk/blob/main/readme_img/777.png?raw=true)
+![img](https://github.com/13888285815/workbuddy-billd-desk/blob/main/readme_img/777.png?raw=true)
 
 > 控制页
 
-![img](https://github.com/galaxy-s10/billd-desk/blob/main/readme_img/888.png?raw=true)
+![img](https://github.com/13888285815/workbuddy-billd-desk/blob/main/readme_img/888.png?raw=true)
 
 ### 屏幕墙
 
-![img](https://github.com/galaxy-s10/billd-desk/blob/main/readme_img/444.png?raw=true)
+![img](https://github.com/13888285815/workbuddy-billd-desk/blob/main/readme_img/444.png?raw=true)
 
 ### 批量群控
 
-![img](https://github.com/galaxy-s10/billd-desk/blob/main/readme_img/b1.webp?raw=true)
+![img](https://github.com/13888285815/workbuddy-billd-desk/blob/main/readme_img/b1.webp?raw=true)
 
 ### 设备分组
 
-![img](https://github.com/galaxy-s10/billd-desk/blob/main/readme_img/999.png?raw=true)
+![img](https://github.com/13888285815/workbuddy-billd-desk/blob/main/readme_img/999.png?raw=true)
 
 ### 隐私屏
 
 > 支持自定义隐私屏（图片、文字）
 
-![img](https://github.com/galaxy-s10/billd-desk/blob/main/readme_img/a7.png?raw=true)
+![img](https://github.com/13888285815/workbuddy-billd-desk/blob/main/readme_img/a7.png?raw=true)
 
 ### 虚拟屏
 
-![img](https://github.com/galaxy-s10/billd-desk/blob/main/readme_img/a8.png?raw=true)
+![img](https://github.com/13888285815/workbuddy-billd-desk/blob/main/readme_img/a8.png?raw=true)
 
 ### 鼠标、键盘仿真
 
-![img](https://github.com/galaxy-s10/billd-desk/blob/main/readme_img/a9.jpg?raw=true)
+![img](https://github.com/13888285815/workbuddy-billd-desk/blob/main/readme_img/a9.jpg?raw=true)
 
 ### 安卓端控制电脑端【TODO】
 
@@ -206,37 +206,37 @@ Api：
 
 ### 文件传输
 
-![img](https://github.com/galaxy-s10/billd-desk/blob/main/readme_img/666.png?raw=true)
+![img](https://github.com/13888285815/workbuddy-billd-desk/blob/main/readme_img/666.png?raw=true)
 
 ### 跨平台支持
 
-![img](https://github.com/galaxy-s10/billd-desk/blob/main/readme_img/555.png?raw=true)
+![img](https://github.com/13888285815/workbuddy-billd-desk/blob/main/readme_img/555.png?raw=true)
 
 ### [后台] 控制台
 
-![img](https://github.com/galaxy-s10/billd-desk/blob/main/readme_img/a2.png?raw=true)
+![img](https://github.com/13888285815/workbuddy-billd-desk/blob/main/readme_img/a2.png?raw=true)
 
 ### [后台] 黑名单
 
-![img](https://github.com/galaxy-s10/billd-desk/blob/main/readme_img/a1.png?raw=true)
+![img](https://github.com/13888285815/workbuddy-billd-desk/blob/main/readme_img/a1.png?raw=true)
 
 ### [后台] 设备分组
 
-![img](https://github.com/galaxy-s10/billd-desk/blob/main/readme_img/a3.png?raw=true)
+![img](https://github.com/13888285815/workbuddy-billd-desk/blob/main/readme_img/a3.png?raw=true)
 
 ### [后台] 远程管理
 
 - 远程记录
 
-![img](https://github.com/galaxy-s10/billd-desk/blob/main/readme_img/a4.png?raw=true)
+![img](https://github.com/13888285815/workbuddy-billd-desk/blob/main/readme_img/a4.png?raw=true)
 
 - 在线远程
 
-![img](https://github.com/galaxy-s10/billd-desk/blob/main/readme_img/a5.png?raw=true)
+![img](https://github.com/13888285815/workbuddy-billd-desk/blob/main/readme_img/a5.png?raw=true)
 
 - 在线设备
 
-![img](https://github.com/galaxy-s10/billd-desk/blob/main/readme_img/a6.png?raw=true)
+![img](https://github.com/13888285815/workbuddy-billd-desk/blob/main/readme_img/a6.png?raw=true)
 
 ## BilldDesk Pro免费吗？
 
@@ -245,17 +245,17 @@ Api：
 
 ## 常见问题
 
-[https://desk.hsslive.cn/#/faq](https://desk.hsslive.cn/#/faq)
+[/#/faq](/#/faq)
 
 ## 问题反馈
 
-欢迎提 [issue](https://github.com/galaxy-s10/billd-desk/issues)
+欢迎提 [issue](https://github.com/13888285815/workbuddy-billd-desk/issues)
 
 ## 联系作者
 
-[https://desk.hsslive.cn/#/hi](https://desk.hsslive.cn/#/hi)
+[/#/hi](/#/hi)
 
 ## BilldDesk Pro源码
 
 - BilldDesk开源：[源码](./README_OpenSource.md)
-- BilldDesk Pro不开源，源码需要购买：[https://desk.hsslive.cn/#/price](https://desk.hsslive.cn/#/price)
+- BilldDesk Pro不开源，源码需要购买：[/#/price](/#/price)

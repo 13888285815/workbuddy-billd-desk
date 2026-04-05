@@ -4,17 +4,17 @@ import { Key } from '@nut-tree-fork/shared';
 import type { BilldHtmlWebpackPluginLog } from '@/interface';
 import { prodDomain } from '@/spec-config';
 
-export const PROJECT_GITHUB = `https://github.com/galaxy-s10/billd-desk-electron`;
-export const WEB_DESK_URL = `https://desk.hsslive.cn`;
+export const PROJECT_GITHUB = `https://github.com/13888285815/workbuddy-billd-desk`;
+export const WEB_DESK_URL = ``;
 
 export const AUTHOR_INFO = {
-  github: 'https://github.com/galaxy-s10',
+  github: 'https://github.com/13888285815',
   wechat: 'shuisheng9905',
   qq: '2274751790',
 };
 
 export const COMMON_URL = {
-  privatizationDeployment: 'https://desk.hsslive.cn/privatizationDeployment',
+  privatizationDeployment: '/privatizationDeployment',
   payCoursesArticle: `https://www.hsslive.cn/article/151`,
 };
 
