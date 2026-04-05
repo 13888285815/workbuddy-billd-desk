@@ -3,7 +3,7 @@
     <div class="nav"></div>
     <div class="container">
       <div class="label">最近连接</div>
-      <div v-if="!cacheStore.linkDeviceList.length">暂无记录</div>
+      <div v-if="!cacheStore.linkDeviceList.length">$t("common.noRecord")</div>
       <div
         v-else
         class="link-device-list"

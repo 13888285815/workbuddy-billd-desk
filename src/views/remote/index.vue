@@ -2,10 +2,10 @@
   <div class="remote-wrap">
     <div class="container">
       <div class="local-device">
-        <div class="label">此设备</div>
+        <div class="label">$t("common.thisDevice")</div>
         <div class="info">
           <div class="info-left">
-            <div class="txt">设备代码</div>
+            <div class="txt">$t("common.deviceCode")</div>
             <div class="code-info">
               <div class="code">{{ cacheStore.deskUserUuid }}</div>
               <div
@@ -19,7 +19,7 @@
             </div>
           </div>
           <div class="info-right">
-            <div class="txt">临时密码</div>
+            <div class="txt">$t("common.tempPassword")</div>
             <div class="code-info">
               <div class="code">
                 {{
@@ -40,7 +40,7 @@
         </div>
       </div>
       <div class="remote-device">
-        <div class="label">远程控制设备</div>
+        <div class="label">$t("common.remoteControlDevice")</div>
         <div class="info">
           <div
             v-on-click-outside="handleClickOutside"
@@ -54,7 +54,7 @@
                 v-model="cacheStore.remoteDeskUserUuid"
                 type="text"
                 class="ipt"
-                :placeholder="'请输入远程设备代码'"
+                :placeholder="'请输入远程$t("common.deviceCode")'"
                 maxlength="8"
               />
               <div
@@ -87,7 +87,7 @@
                   v-if="!cacheStore.linkDeviceList.length"
                   class="null"
                 >
-                  暂无记录
+                  $t("common.noRecord")
                 </div>
               </div>
             </div>
@@ -97,7 +97,7 @@
             :class="{ gray: !cacheStore.remoteDeskUserUuid.length, loading }"
             @click="startRemote"
           >
-            <div v-if="!loading">连接</div>
+            <div v-if="!loading">$t("common.connect")</div>
             <div
               v-else
               class="loading"
@@ -107,11 +107,11 @@
       </div>
 
       <template v-if="!appStore.remoteDesk.size">
-        <div class="tip">已准备好连接</div>
+        <div class="tip">已准备好$t("common.connect")</div>
         <div class="link-config">
           <div class="link-item">
             <n-space>
-              <div class="link-label">码率：</div>
+              <div class="link-label">$t("common.bitrate")：</div>
               <n-radio-group v-model:value="currentMaxBitrate">
                 <n-radio
                   v-for="item in maxBitrate"
@@ -125,7 +125,7 @@
           </div>
           <div class="link-item">
             <n-space>
-              <div class="link-label">帧率：</div>
+              <div class="link-label">$t("common.framerate")：</div>
               <n-radio-group v-model:value="currentMaxFramerate">
                 <n-radio
                   v-for="item in maxFramerate"
@@ -139,7 +139,7 @@
           </div>
           <div class="link-item">
             <n-space>
-              <div class="link-label">分辨率：</div>
+              <div class="link-label">$t("common.resolution")：</div>
               <n-radio-group v-model:value="currentResolutionRatio">
                 <n-radio
                   v-for="item in resolutionRatio"
@@ -153,7 +153,7 @@
           </div>
           <div class="link-item">
             <n-space>
-              <div class="link-label">视频内容：</div>
+              <div class="link-label">$t("common.videoContent")：</div>
               <n-radio-group v-model:value="currentVideoContentHint">
                 <n-radio
                   v-for="item in videoContentHint"
@@ -167,7 +167,7 @@
           </div>
           <div class="link-item">
             <n-space>
-              <div class="link-label">音频内容：</div>
+              <div class="link-label">$t("common.audioContent")：</div>
               <n-radio-group v-model:value="currentAudioContentHint">
                 <n-radio
                   v-for="item in audioContentHint"
@@ -196,7 +196,7 @@
             class="del"
             @click="handleDel(item[1].sender)"
           >
-            断开
+            $t("common.disconnect")
           </span>
         </div>
       </div>
@@ -471,7 +471,7 @@ watch(
     newval.forEach((item) => {
       if (item.isClose) {
         // window.$notification.warning({
-        //   content: `${item.sender}远程连接断开`,
+        //   content: `${item.sender}远程$t("common.connect")$t("common.disconnect")`,
         //   duration: 2000,
         // });
         appStore.remoteDesk.delete(item.sender);
@@ -646,9 +646,9 @@ async function handleUpdatePassword() {
         new_password: cacheStore.deskUserPassword!,
       });
       originalPassword.value = cacheStore.deskUserPassword;
-      window.$message.success('更新临时密码成功！');
+      window.$message.success('更新$t("common.tempPassword")成功！');
     } else {
-      window.$message.warning('临时密码长度要求6-12位！');
+      window.$message.warning('$t("common.tempPassword")长度要求6-12位！');
     }
   } catch (error) {
     console.log(error);
@@ -760,7 +760,7 @@ async function handleRTC(receiver) {
 }
 
 function handleCopyRemoteInfo() {
-  const str = `BilldDesk:设备代码:${cacheStore.remoteDeskUserUuid};临时密码:${cacheStore.remoteDeskUserPassword}`;
+  const str = `BilldDesk:$t("common.deviceCode"):${cacheStore.remoteDeskUserUuid};$t("common.tempPassword"):${cacheStore.remoteDeskUserPassword}`;
   // @ts-ignore
   textArea.select(); // 选择文本
   // @ts-ignore
@@ -769,11 +769,11 @@ function handleCopyRemoteInfo() {
   navigator.clipboard
     .writeText(str)
     .then(() => {
-      window.$message.success('已复制邀请信息！');
+      window.$message.success('$t("common.copyInviteInfoSuccess")');
     })
     .catch((err) => {
       console.log(err);
-      window.$message.error('复制邀请信息失败！');
+      window.$message.error('$t("common.copyInviteInfoFailed")');
     });
 }
 
@@ -790,7 +790,7 @@ async function handleResetDeskuuid() {
 
 function handleCopy(str) {
   copyToClipBoard(str);
-  window.$message.success('复制成功！');
+  window.$message.success('$t("common.copySuccess")');
 }
 
 function handleClose() {
@@ -879,7 +879,7 @@ async function handleConfirm(pwd: string) {
         }
       } else {
         showPwdModalCpt.value = true;
-        errMsg.value = '密码错误，请重新输入';
+        errMsg.value = '$t("common.passwordError")';
       }
     } else {
       window.$message.error(res.message);
@@ -907,11 +907,11 @@ function handleDelLinkDeviceList(item) {
 
 async function startRemote() {
   if (cacheStore.remoteDeskUserUuid === '') {
-    window.$message.warning('请输入远程设备代码！');
+    window.$message.warning('请输入远程$t("common.deviceCode")！');
     return;
   }
   if (cacheStore.remoteDeskUserUuid === cacheStore.deskUserUuid) {
-    window.$message.warning('不能连接自己！');
+    window.$message.warning('不能$t("common.connect")自己！');
     return;
   }
   try {
@@ -930,7 +930,7 @@ async function startRemote() {
           showPwdModalCpt.value = true;
         }
       } else {
-        window.$message.info('该设备不在线');
+        window.$message.info('$t("common.deviceOffline")');
         setTimeout(() => {
           loading.value = false;
         }, 300);

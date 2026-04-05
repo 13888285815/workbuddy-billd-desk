@@ -4,21 +4,21 @@
     <div class="container">
       <template v-if="ipcRenderer">
         <div class="item">
-          <div class="label">界面设置</div>
+          <div class="label">$t("common.interfaceSetting")</div>
           <div class="value">
             <n-space>
-              <div>主窗口置顶：</div>
+              <div>$t("common.mainWindowOnTop")</div>
               <n-radio
                 :checked="cacheStore.isAlwaysOnTop"
                 @change="cacheStore.isAlwaysOnTop = true"
               >
-                是
+                $t("common.yes")
               </n-radio>
               <n-radio
                 :checked="!cacheStore.isAlwaysOnTop"
                 @change="cacheStore.isAlwaysOnTop = false"
               >
-                否
+                $t("common.no")
               </n-radio>
             </n-space>
           </div>
@@ -27,7 +27,7 @@
       </template>
 
       <div class="item">
-        <div class="label">接口配置</div>
+        <div class="label">$t("common.interfaceConfig")</div>
         <div class="value">
           <div class="v-item one">
             <span
@@ -66,20 +66,20 @@
             class="v-item edit"
             @click="showUrlModalCpt = true"
           >
-            修改
+            $t("common.edit")
           </div>
         </div>
       </div>
       <div class="hr"></div>
       <div class="item">
-        <div class="label">作者信息</div>
+        <div class="label">$t("common.authorInfo")</div>
         <div class="value">
           <div class="v-item one">
             <span
               class="link"
               @click="handleCopy(AUTHOR_INFO.wechat)"
             >
-              微信：{{ AUTHOR_INFO.wechat }}
+              $t("common.wechat"){{ AUTHOR_INFO.wechat }}
             </span>
           </div>
           <div class="v-item two">
@@ -87,12 +87,12 @@
               class="link"
               @click="handleCopy(AUTHOR_INFO.qq)"
             >
-              QQ：{{ AUTHOR_INFO.qq }}
+              $t("common.qq"){{ AUTHOR_INFO.qq }}
             </span>
           </div>
           <div class="v-item two">
             <span>
-              <span>Github：</span>
+              <span>$t("common.github")</span>
               <span
                 class="link"
                 @click="
@@ -111,7 +111,7 @@
       </div>
       <div class="hr"></div>
       <div class="item">
-        <div class="label">网页版体验</div>
+        <div class="label">$t("common.webVersionExperience")</div>
         <div class="value">
           <div class="v-item one">
             <span
@@ -131,7 +131,7 @@
       </div>
       <div class="hr"></div>
       <div class="item">
-        <div class="label">私有化部署</div>
+        <div class="label">$t("common.privatizationDeployment")</div>
         <div class="value">
           <div class="v-item one">
             <span
@@ -143,7 +143,7 @@
                 })
               "
             >
-              <span>了解详情</span>
+              <span>$t("common.learnMore")</span>
               <VPIconExternalLink class="icon"></VPIconExternalLink>
             </span>
           </div>
@@ -151,7 +151,7 @@
       </div>
       <div class="hr"></div>
       <div class="item">
-        <div class="label">下载客户端</div>
+        <div class="label">$t("common.downloadClient")</div>
         <div class="value">
           <div class="v-item one">
             <div class="client-list">
@@ -175,18 +175,18 @@
       </div>
       <div class="hr"></div>
       <div class="item">
-        <div class="label">关于{{ PRODUCT_NAME }}</div>
+        <div class="label">$t("common.about"){{ PRODUCT_NAME }}</div>
         <div class="value">
           <div class="v-item one">
             <span>
-              当前版本：v{{ appStore.version }}（{{ appStore.lastBuildDate }}）
+              $t("common.currentVersion")v{{ appStore.version }}（{{ appStore.lastBuildDate }}）
             </span>
             <span
               v-if="ipcRenderer"
               class="btn"
               @click="handleDeskVersionCheck"
             >
-              检查更新
+              $t("common.checkUpdate")
             </span>
           </div>
         </div>
@@ -241,7 +241,7 @@ const clientList = ref<
 
 function handleCopy(str) {
   copyToClipBoard(str);
-  window.$message.success('复制成功！');
+  window.$message.success('$t("common.copySuccess")');
 }
 
 watch(
@@ -294,7 +294,7 @@ watch(
 
 function jumpToDownload({ windowId, url }) {
   if (!url || url === '') {
-    window.$message.info('敬请期待！');
+    window.$message.info('$t("common.comingSoon")');
     return;
   }
   handleOpenExternal({
@@ -308,9 +308,9 @@ async function handleDeskVersionCheck() {
   if (res.code === 200 && res.data) {
     appStore.updateModalInfo = res.data;
     if (appStore.updateModalInfo?.checkUpdate === 2) {
-      window.$message.success('当前不需要更新');
+      window.$message.success('$t("common.noUpdateNeeded")');
     } else if (appStore.updateModalInfo?.isUpdate === 2) {
-      window.$message.success('当前是最新版本');
+      window.$message.success('当前$t("common.yes")最新版本');
     }
   }
 }
